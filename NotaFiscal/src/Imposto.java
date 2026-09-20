@@ -1,5 +1,5 @@
 
-public class Imposto {
+public abstract class Imposto {
     private double aliquota;
     private String sigla;
     

@@ -8,6 +8,6 @@ public class PIS extends ImpostoFederal{
     public void calcularBC() {
         System.out.println("Metodo calcularBC utilizado em PIS");
     }
-
+    
 }
 

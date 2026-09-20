@@ -40,6 +40,8 @@ public class NotaFiscal {
     public void setImpostos(List<Imposto> impostos) {
         this.impostos = impostos;
     } 
-    
+    public void adicionar(Imposto imposto) {
+        impostos.add(imposto);
+    }
     
 }
