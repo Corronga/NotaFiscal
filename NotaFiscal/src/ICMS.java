@@ -15,5 +15,10 @@ public class ICMS extends ImpostoEstadual{
         this.reducao_bc = reducao_bc;
     }
 
+    @Override 
+    public double calcularImposto(double baseCalculo) {
+        double valorImposto = baseCalculo * (getAliquota() / 100);
+        return valorImposto;
+    }
     
 }

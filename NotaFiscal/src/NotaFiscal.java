@@ -44,4 +44,14 @@ public class NotaFiscal {
         impostos.add(imposto);
     }
     
+    public void exibirImpostos() {
+        System.out.println("Impostos da Nota Fiscal " + numero_nota + ":");
+        for (Imposto imposto : impostos) {
+            System.out.println("Esfera: " + imposto.getEsfera());
+            System.out.println("Sigla: " + imposto.getSigla());
+            System.out.println("Alíquota: " + imposto.getAliquota() + "%");
+            System.out.println("Valor do Imposto: R$ " + imposto.calcularImposto(valor_operacao));
+            System.out.println("-------------------------");
+        }
+    }
 }

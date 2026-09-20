@@ -1,4 +1,4 @@
-public class ImpostoEstadual extends Imposto {
+public abstract class ImpostoEstadual extends Imposto {
     private String uf;
 
     public ImpostoEstadual(double aliquota, String sigla, String uf) {
@@ -16,7 +16,7 @@ public class ImpostoEstadual extends Imposto {
     }
     
     @Override 
-    public void getEsfera() {
-        System.out.println("Metodo getEsfera utilizado em ImpostoEstadual");
+    public String getEsfera(){
+        return "Imposto Estadual";
     }
 }

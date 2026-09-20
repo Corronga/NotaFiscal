@@ -1,4 +1,4 @@
-public class ImpostoFederal extends Imposto {
+public abstract class ImpostoFederal extends Imposto {
     private int codigo_receita;
     
     public ImpostoFederal(double aliquota, String sigla, int codigo_receita) {
@@ -16,7 +16,7 @@ public class ImpostoFederal extends Imposto {
     }
     
     @Override 
-    public void getEsfera(){
-        System.out.println("Metodo getEsfera utilizado em ImpostoFederal");
+    public String getEsfera(){
+        return "Imposto Federal";
     }
 }

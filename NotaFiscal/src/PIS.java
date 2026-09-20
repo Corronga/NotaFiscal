@@ -9,5 +9,10 @@ public class PIS extends ImpostoFederal{
         System.out.println("Metodo calcularBC utilizado em PIS");
     }
     
+    @Override 
+    public double calcularImposto(double baseCalculo) {
+        double valorImposto = baseCalculo * (getAliquota() / 100);
+        return valorImposto;
+    }
 }
 

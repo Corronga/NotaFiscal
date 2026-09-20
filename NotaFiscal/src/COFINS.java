@@ -1,11 +1,11 @@
-public class CONFINS extends ImpostoFederal{
+public class COFINS extends ImpostoFederal{
     private double desconto_base; 
 
-    public CONFINS (double aliquota, String sigla, int codigo_receita, double desconto_base) {
+    public COFINS (double aliquota, String sigla, int codigo_receita, double desconto_base) {
         super(aliquota, sigla, codigo_receita);
         this.desconto_base = desconto_base;
     }
-    public CONFINS(){
+    public COFINS(){
     }
 
     public double getDesconto_base() {
@@ -15,9 +15,10 @@ public class CONFINS extends ImpostoFederal{
         this.desconto_base = desconto_base;
     }
 
-    @Override
-    public void getEsfera() {
-        System.out.println("Metodo getEsfera utilizado em CONFINS");
+    @Override 
+    public double calcularImposto(double baseCalculo) {
+        double valorImposto = baseCalculo * (getAliquota() / 100);
+        return valorImposto;
     }
 }
 

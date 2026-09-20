@@ -37,14 +37,14 @@ public abstract class Imposto {
     }
 
     public void calcularBC() {
-        System.out.println(("Metodo calcularBC utilizado em classe Imposto"));
     }
     public void calcularValor() {
-        System.out.println(("Metodo calcularValor utilizado em classe Imposto"));
     }
     
-    public void getEsfera() {
-        System.out.println(("Metodo getEsfera utilizado em classe Imposto"));
+    public String getEsfera() {
+        return "Imposto";
     }
 
+    public abstract double calcularImposto(double baseCalculo); 
+    
 }   
