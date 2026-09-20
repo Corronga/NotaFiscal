@@ -6,7 +6,6 @@ public class NotaFiscal {
     private String numero_nota;
     private double valor_operacao; 
     private List<Imposto> impostos;
-
     
     public NotaFiscal(int id, String numero_nota, double valor_operacao, List<Imposto> impostos) {
         this.id = id;
