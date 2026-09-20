@@ -15,6 +15,9 @@ public abstract class ImpostoEstadual extends Imposto {
         this.uf = uf;
     }
     
+    @Override
+    public abstract double calcularBC(double baseCalculo);
+    
     @Override 
     public String getEsfera(){
         return "Imposto Estadual";
