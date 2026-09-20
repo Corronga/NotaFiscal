@@ -14,6 +14,10 @@ public abstract class ImpostoFederal extends Imposto {
     public void setCodigo_receita(int codigo_receita) {
         this.codigo_receita = codigo_receita;
     }
+
+    public void calcularBC() {
+        System.out.println("Metodo calcularBC utilizado em Imposto Federal");
+    }
     
     @Override 
     public String getEsfera(){

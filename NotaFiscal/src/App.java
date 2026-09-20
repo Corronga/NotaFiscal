@@ -11,7 +11,6 @@ public class App {
         nota.adicionar(pis);
         nota.adicionar(confins);
         
-        
         nota.exibirImpostos();
     }
 }
