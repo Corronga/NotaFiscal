@@ -3,9 +3,9 @@ public class App {
 
         NotaFiscal nota = new NotaFiscal(1, "000001", 10000.00, null);
 
-        Imposto icms = new ICMS(12, "0", "GO", 0);
-        Imposto pis = new PIS(1.65, "0", 8109);
-        Imposto confins = new COFINS(7.6, "0", 2172, 0);
+        Imposto icms = new ICMS(12, "ICMS", "GO", 0);
+        Imposto pis = new PIS(1.65, "PIS", 8109);
+        Imposto confins = new COFINS(7.6, "COFINS", 2172, 0);
         
         nota.adicionar(icms);
         nota.adicionar(pis);

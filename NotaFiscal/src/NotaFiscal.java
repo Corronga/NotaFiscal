@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class NotaFiscal {
@@ -12,6 +13,12 @@ public class NotaFiscal {
         this.numero_nota = numero_nota;
         this.valor_operacao = valor_operacao;
         this.impostos = impostos;
+
+         if (impostos == null) {
+            this.impostos = new ArrayList<>();
+        } else {
+            this.impostos = impostos;
+        }
     }
     public NotaFiscal() {
     }
@@ -40,6 +47,7 @@ public class NotaFiscal {
     public void setImpostos(List<Imposto> impostos) {
         this.impostos = impostos;
     } 
+
     public void adicionar(Imposto imposto) {
         impostos.add(imposto);
     }
