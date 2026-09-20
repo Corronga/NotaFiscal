@@ -36,9 +36,6 @@ public abstract class Imposto {
         System.out.println(("Metodo PESQUISAR utilizado em classe Imposto"));
     }
 
-    public double calcularBC(double baseCalculo) {
-        return 0;
-    }
     public void calcularValor() {
     }
     
@@ -46,6 +43,6 @@ public abstract class Imposto {
         return "Imposto";
     }
 
-    public abstract double calcularImposto(double baseCalculo); 
+    public abstract double calcularBC(double baseCalculo); 
     
 }   

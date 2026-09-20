@@ -58,7 +58,7 @@ public class NotaFiscal {
             System.out.println("Esfera: " + imposto.getEsfera());
             System.out.println("Sigla: " + imposto.getSigla());
             System.out.println("Alíquota: " + imposto.getAliquota() + "%");
-            System.out.println("Valor do Imposto: R$ " + imposto.calcularImposto(valor_operacao));
+            System.out.println("Valor do Imposto: R$ " + imposto.calcularBC(valor_operacao));
             System.out.println("-------------------------");
         }
     }

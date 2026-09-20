@@ -16,7 +16,7 @@ public class COFINS extends ImpostoFederal{
     }
 
     @Override 
-    public double calcularImposto(double baseCalculo) {
+    public double calcularBC(double baseCalculo) {
         double valorImposto = baseCalculo * (getAliquota() / 100);
         return valorImposto;
     }
